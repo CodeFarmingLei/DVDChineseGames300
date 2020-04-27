@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8D01B51-B53A-4D64-AB88-D0E659AB3E0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DVD中文游戏300</RootNamespace>
+    <AssemblyName>DVD中文游戏300</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>任天堂红白机.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>F:\CSkin 16.1.14.3\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Emulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Emulator.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOption.Designer.cs">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateLog.Designer.cs">
+      <DependentUpon>FormUpdateLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameROM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameROM.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceImg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceImg.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Emulator.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Emulator.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption.resx">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateLog.resx">
+      <DependentUpon>FormUpdateLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameROM.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GameROM.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResourceImg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceImg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-01 1942.nes" />
+    <None Include="Resources\01-02 1943.nes" />
+    <None Include="Resources\01-03 冒险岛.nes" />
+    <None Include="Resources\01-04 坦克.nes" />
+    <None Include="Resources\01-05 兵蜂.nes" />
+    <None Include="Resources\01-06 炸弹超人.nes" />
+    <None Include="Resources\01-07 炸弹杰克.nes" />
+    <None Include="Resources\01-08 咖啡店.nes" />
+    <None Include="Resources\01-09 马戏团.nes" />
+    <None Include="Resources\01-10 魂斗罗.nes" />
+    <None Include="Resources\02-01 太空战士.nes" />
+    <None Include="Resources\02-02 玛莉医生.nes" />
+    <None Include="Resources\02-03 火龙.nes" />
+    <None Include="Resources\02-04 超级雷电.nes" />
+    <None Include="Resources\02-05 钻石方块.nes" />
+    <None Include="Resources\02-06 超级玛莉.nes" />
+    <None Include="Resources\02-07 猪小弟.nes" />
+    <None Include="Resources\02-08 彩虹岛.nes" />
+    <None Include="Resources\02-09 坦克2.nes" />
+    <None Include="Resources\02-10 俄罗斯方块.nes" />
+    <None Include="Resources\03-01 橄榄球.nes" />
+    <None Include="Resources\03-02 辛巴达.nes" />
+    <None Include="Resources\03-03 百眼巨神.nes" />
+    <None Include="Resources\03-04 打砖块.nes" />
+    <None Include="Resources\03-05 爱心企鹅.nes" />
+    <None Include="Resources\03-06 气球大战.nes" />
+    <None Include="Resources\03-07 汉堡时间.nes" />
+    <None Include="Resources\03-08 B计划.nes" />
+    <None Include="Resources\03-09 迷魂车.nes" />
+    <None Include="Resources\03-10 五子棋.nes" />
+    <None Include="Resources\04-01 拼图.nes" />
+    <None Include="Resources\04-02 战场.nes" />
+    <None Include="Resources\04-03 挖掘者.nes" />
+    <None Include="Resources\04-04 金刚1代.nes" />
+    <None Include="Resources\04-05 金刚2代.nes" />
+    <None Include="Resources\04-06 金刚3代.nes" />
+    <None Include="Resources\04-07 篮球.nes" />
+    <None Include="Resources\04-08 龙战士.nes" />
+    <None Include="Resources\04-09 电梯.nes" />
+    <None Include="Resources\04-10 火凤凰.nes" />
+    <None Include="Resources\05-01 救火队员.nes" />
+    <None Include="Resources\05-02 机器人战争.nes" />
+    <None Include="Resources\05-03 前线.nes" />
+    <None Include="Resources\05-04 小蜜蜂.nes" />
+    <None Include="Resources\05-05 高尔夫球.nes" />
+    <None Include="Resources\05-06 七宝奇谋2.nes" />
+    <None Include="Resources\05-07 沙罗曼蛇.nes" />
+    <None Include="Resources\05-08 绿色兵团.nes" />
+    <None Include="Resources\05-09 飞狼.nes" />
+    <None Include="Resources\05-10 直升机.nes" />
+    <None Include="Resources\06-01 射击靶场.nes" />
+    <None Include="Resources\06-02 雪人.nes" />
+    <None Include="Resources\06-03 冰球联赛.nes" />
+    <None Include="Resources\06-04 赤色要塞.nes" />
+    <None Include="Resources\06-05 将棋.nes" />
+    <None Include="Resources\06-06 影子传说.nes" />
+    <None Include="Resources\06-07 南北拳.nes" />
+    <None Include="Resources\06-08 忍者.nes" />
+    <None Include="Resources\06-09 功夫小子.nes" />
+    <None Include="Resources\06-10 美人鱼.nes" />
+    <None Include="Resources\07-01 淘金者.nes" />
+    <None Include="Resources\07-02 淘金者2.nes" />
+    <None Include="Resources\07-03 溜溜球.nes" />
+    <None Include="Resources\07-04 桌球.nes" />
+    <None Include="Resources\07-05 金刚组合.nes" />
+    <None Include="Resources\07-06 4人麻将.nes" />
+    <None Include="Resources\07-07 台湾麻将.nes" />
+    <None Include="Resources\07-08 猫捉老鼠.nes" />
+    <None Include="Resources\07-09 水管玛莉.nes" />
+    <None Include="Resources\07-10 迷你昆虫.nes" />
+    <None Include="Resources\08-01 战斗营.nes" />
+    <None Include="Resources\08-02 忍者2.nes" />
+    <None Include="Resources\08-03 爱的小屋.nes" />
+    <None Include="Resources\08-04 黑白棋.nes" />
+    <None Include="Resources\08-05 小精灵.nes" />
+    <None Include="Resources\08-06 第八连.nes" />
+    <None Include="Resources\08-07 南极冒险.nes" />
+    <None Include="Resources\08-08 扑克集锦.nes" />
+    <None Include="Resources\08-09 动物小镇.nes" />
+    <None Include="Resources\08-10 大力水手.nes" />
+    <None Include="Resources\09-01 火箭车.nes" />
+    <None Include="Resources\09-02 洛克人.nes" />
+    <None Include="Resources\09-03 四度空间.nes" />
+    <None Include="Resources\09-04 太空毁灭者.nes" />
+    <None Include="Resources\09-05 忍者赤影.nes" />
+    <None Include="Resources\09-06 世界桌球赛.nes" />
+    <None Include="Resources\09-07 红巾特工队.nes" />
+    <None Include="Resources\09-08 潜水艇.nes" />
+    <None Include="Resources\09-09 枪战.nes" />
+    <None Include="Resources\09-10 小蜜蜂2.nes" />
+    <None Include="Resources\10-01 探勘洞穴者.nes" />
+    <None Include="Resources\10-02 雷鸟号.nes" />
+    <None Include="Resources\10-03 星际卫士.nes" />
+    <None Include="Resources\10-04 星际战士.nes" />
+    <None Include="Resources\10-05 曲棍球2.nes" />
+    <None Include="Resources\10-06 网球.nes" />
+    <None Include="Resources\10-07 飞机射击.nes" />
+    <None Include="Resources\10-08 玛莉砖块.nes" />
+    <None Include="Resources\10-09 摔角.nes" />
+    <None Include="Resources\10-10 铁板阵.nes" />
+    <None Include="Resources\11-01 羽毛球.nes" />
+    <None Include="Resources\11-02 王者之剑.nes" />
+    <None Include="Resources\11-03 庸兵.nes" />
+    <None Include="Resources\11-04 智慧方块1.nes" />
+    <None Include="Resources\11-05 火凤凰2.nes" />
+    <None Include="Resources\11-06 溜溜球2.nes" />
+    <None Include="Resources\11-07 机车大战.nes" />
+    <None Include="Resources\11-08 巧巧弹.nes" />
+    <None Include="Resources\11-09 飞鸟骑士.nes" />
+    <None Include="Resources\11-10 超时空要塞.nes" />
+    <None Include="Resources\12-01 二人麻将.nes" />
+    <None Include="Resources\12-02 围棋指南.nes" />
+    <None Include="Resources\12-03 摔跤.nes" />
+    <None Include="Resources\12-04 中国象棋.nes" />
+    <None Include="Resources\12-05 暗棋.nes" />
+    <None Include="Resources\12-06 棒球.nes" />
+    <None Include="Resources\12-07 扑克方块.nes" />
+    <None Include="Resources\12-08 太空战舰.nes" />
+    <None Include="Resources\12-09 青蛙冒险.nes" />
+    <None Include="Resources\12-10 圣骑士.nes" />
+    <None Include="Resources\13-01 智慧桥.nes" />
+    <None Include="Resources\13-02 环游世界80天.nes" />
+    <None Include="Resources\13-03 智慧方块2.nes" />
+    <None Include="Resources\13-04 射击方块.nes" />
+    <None Include="Resources\13-05 新人类.nes" />
+    <None Include="Resources\13-06 相扑.nes" />
+    <None Include="Resources\13-07 铁道王.nes" />
+    <None Include="Resources\13-08 侦探员.nes" />
+    <None Include="Resources\13-09 米老鼠.nes" />
+    <None Include="Resources\13-10 机动四驱车.nes" />
+    <None Include="Resources\14-01 装甲英雄.nes" />
+    <None Include="Resources\14-02 忍者阿修罗之章.nes" />
+    <None Include="Resources\14-03 战场之狼.nes" />
+    <None Include="Resources\14-04 碰碰赛车手.nes" />
+    <None Include="Resources\14-05 冠军保龄球.nes" />
+    <None Include="Resources\14-06 失落的世界.nes" />
+    <None Include="Resources\14-07 空手道精武们.nes" />
+    <None Include="Resources\14-08 快乐水果狸.nes" />
+    <None Include="Resources\14-09 迷宫组曲.nes" />
+    <None Include="Resources\14-10 金齿轮战士.nes" />
+    <None Include="Resources\15-01 太空传说.nes" />
+    <None Include="Resources\15-02 网球大满贯赛.nes" />
+    <None Include="Resources\15-03 虎形直升机.nes" />
+    <None Include="Resources\15-04 金字塔方块.nes" />
+    <None Include="Resources\15-05 油漆精灵.nes" />
+    <None Include="Resources\15-06 金刚数学.nes" />
+    <None Include="Resources\15-07 西游记.nes" />
+    <None Include="Resources\15-08 决战X世代.nes" />
+    <None Include="Resources\15-09 排球.nes" />
+    <None Include="Resources\15-10 地球战士.nes" />
+    <None Include="Resources\Chinese.vlp" />
+    <None Include="Resources\Disksys.rom" />
+    <None Include="Resources\中文游戏300图标.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\主页面LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第1页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第2页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第3页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第4页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第5页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第6页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第7页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第8页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第9页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第10页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第11页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第12页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第13页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第14页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第15页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第16页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第17页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第18页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第19页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第20页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第21页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第22页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第23页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第24页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第25页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第26页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第27页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第28页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第29页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD中文游戏300目录-第30页.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirtuaNES.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TouXiangimg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TouXiangimg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppConfig.xml" />
+    <Content Include="bitbug_favicon %281%29.ico" />
+    <Content Include="GameRecord.xml" />
+    <Content Include="任天堂红白机.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

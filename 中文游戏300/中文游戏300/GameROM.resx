@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_01_01_1942" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-01 1942.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_02_1943" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-02 1943.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_03_冒险岛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-03 冒险岛.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_04_坦克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-04 坦克.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_05_兵蜂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-05 兵蜂.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_06_炸弹超人" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-06 炸弹超人.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_07_炸弹杰克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-07 炸弹杰克.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_08_咖啡店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-08 咖啡店.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_09_马戏团" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-09 马戏团.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_01_10_魂斗罗" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\01-10 魂斗罗.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_01_太空战士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-01 太空战士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_02_玛莉医生" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-02 玛莉医生.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_03_火龙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-03 火龙.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_04_超级雷电" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-04 超级雷电.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_05_钻石方块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-05 钻石方块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_06_超级玛莉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-06 超级玛莉.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_07_猪小弟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-07 猪小弟.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_08_彩虹岛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-08 彩虹岛.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_09_坦克2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-09 坦克2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_10_俄罗斯方块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\02-10 俄罗斯方块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_01_橄榄球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-01 橄榄球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_02_辛巴达" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-02 辛巴达.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_03_百眼巨神" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-03 百眼巨神.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_04_打砖块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-04 打砖块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_05_爱心企鹅" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-05 爱心企鹅.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_06_气球大战" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-06 气球大战.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_07_汉堡时间" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-07 汉堡时间.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_08_B计划" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-08 B计划.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_09_迷魂车" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-09 迷魂车.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_10_五子棋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\03-10 五子棋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_01_拼图" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-01 拼图.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_02_战场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-02 战场.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_03_挖掘者" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-03 挖掘者.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_04_金刚1代" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-04 金刚1代.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_05_金刚2代" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-05 金刚2代.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_06_金刚3代" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-06 金刚3代.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_07_篮球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-07 篮球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_08_龙战士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-08 龙战士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_09_电梯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-09 电梯.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_04_10_火凤凰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\04-10 火凤凰.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_01_救火队员" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-01 救火队员.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_02_机器人战争" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-02 机器人战争.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_03_前线" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-03 前线.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_04_小蜜蜂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-04 小蜜蜂.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_05_高尔夫球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-05 高尔夫球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_06_七宝奇谋2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-06 七宝奇谋2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_07_沙罗曼蛇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-07 沙罗曼蛇.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_08_绿色兵团" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-08 绿色兵团.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_09_飞狼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-09 飞狼.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_10_直升机" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\05-10 直升机.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_01_射击靶场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-01 射击靶场.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_02_雪人" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-02 雪人.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_03_冰球联赛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-03 冰球联赛.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_04_赤色要塞" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-04 赤色要塞.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_05_将棋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-05 将棋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_06_影子传说" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-06 影子传说.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_07_南北拳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-07 南北拳.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_08_忍者" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-08 忍者.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_09_功夫小子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-09 功夫小子.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_06_10_美人鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\06-10 美人鱼.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_01_淘金者" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-01 淘金者.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_02_淘金者2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-02 淘金者2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_03_溜溜球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-03 溜溜球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_04_桌球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-04 桌球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_05_金刚组合" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-05 金刚组合.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_06_4人麻将" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-06 4人麻将.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_07_台湾麻将" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-07 台湾麻将.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_08_猫捉老鼠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-08 猫捉老鼠.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_09_水管玛莉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-09 水管玛莉.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_07_10_迷你昆虫" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\07-10 迷你昆虫.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_01_战斗营" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-01 战斗营.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_02_忍者2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-02 忍者2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_03_爱的小屋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-03 爱的小屋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_04_黑白棋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-04 黑白棋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_05_小精灵" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-05 小精灵.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_06_第八连" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-06 第八连.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_07_南极冒险" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-07 南极冒险.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_08_扑克集锦" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-08 扑克集锦.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_09_动物小镇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-09 动物小镇.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_08_10_大力水手" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\08-10 大力水手.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_01_火箭车" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-01 火箭车.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_02_洛克人" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-02 洛克人.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_03_四度空间" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-03 四度空间.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_04_太空毁灭者" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-04 太空毁灭者.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_05_忍者赤影" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-05 忍者赤影.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_06_世界桌球赛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-06 世界桌球赛.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_07_红巾特工队" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-07 红巾特工队.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_08_潜水艇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-08 潜水艇.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_09_枪战" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-09 枪战.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_09_10_小蜜蜂2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\09-10 小蜜蜂2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_01_探勘洞穴者" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-01 探勘洞穴者.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_02_雷鸟号" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-02 雷鸟号.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_03_星际卫士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-03 星际卫士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_04_星际战士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-04 星际战士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_05_曲棍球2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-05 曲棍球2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_06_网球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-06 网球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_07_飞机射击" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-07 飞机射击.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_08_玛莉砖块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-08 玛莉砖块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_09_摔角" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-09 摔角.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_10_10_铁板阵" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\10-10 铁板阵.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_01_羽毛球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-01 羽毛球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_02_王者之剑" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-02 王者之剑.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_03_庸兵" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-03 庸兵.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_04_智慧方块1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-04 智慧方块1.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_05_火凤凰2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-05 火凤凰2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_06_溜溜球2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-06 溜溜球2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_07_机车大战" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-07 机车大战.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_08_巧巧弹" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-08 巧巧弹.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_09_飞鸟骑士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-09 飞鸟骑士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_11_10_超时空要塞" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\11-10 超时空要塞.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_01_二人麻将" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-01 二人麻将.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_02_围棋指南" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-02 围棋指南.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_03_摔跤" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-03 摔跤.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_04_中国象棋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-04 中国象棋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_05_暗棋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-05 暗棋.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_06_棒球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-06 棒球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_07_扑克方块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-07 扑克方块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_08_太空战舰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-08 太空战舰.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_09_青蛙冒险" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-09 青蛙冒险.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_12_10_圣骑士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\12-10 圣骑士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_01_智慧桥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-01 智慧桥.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_02_环游世界80天" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-02 环游世界80天.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_03_智慧方块2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-03 智慧方块2.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_04_射击方块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-04 射击方块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_05_新人类" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-05 新人类.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_06_相扑" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-06 相扑.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_07_铁道王" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-07 铁道王.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_08_侦探员" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-08 侦探员.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_09_米老鼠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-09 米老鼠.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_13_10_机动四驱车" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\13-10 机动四驱车.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_01_装甲英雄" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-01 装甲英雄.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_02_忍者阿修罗之章" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-02 忍者阿修罗之章.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_03_战场之狼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-03 战场之狼.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_04_碰碰赛车手" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-04 碰碰赛车手.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_05_冠军保龄球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-05 冠军保龄球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_06_失落的世界" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-06 失落的世界.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_07_空手道精武们" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-07 空手道精武们.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_08_快乐水果狸" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-08 快乐水果狸.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_09_迷宫组曲" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-09 迷宫组曲.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14_10_金齿轮战士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\14-10 金齿轮战士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_01_太空传说" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-01 太空传说.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_02_网球大满贯赛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-02 网球大满贯赛.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_03_虎形直升机" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-03 虎形直升机.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_04_金字塔方块" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-04 金字塔方块.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_05_油漆精灵" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-05 油漆精灵.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_06_金刚数学" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-06 金刚数学.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_07_西游记" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-07 西游记.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_08_决战X世代" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-08 决战X世代.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_09_排球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-09 排球.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_10_地球战士" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\15-10 地球战士.nes;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

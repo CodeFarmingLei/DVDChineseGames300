@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+  <spVoiceSound>true</spVoiceSound>
+  <AppConfig>E:\VCD300NesGames\AppConfig.xml</AppConfig>
+  <EmuRoute>E:\VCD300NesGames\Emulator\VirtuaNES.exe</EmuRoute>
+  <GameRoute>E:\VCD300NesGames\Games\</GameRoute>
+  <GameRecord>E:\VCD300NesGames\GameRecord.xml</GameRecord>
+</appSettings>
