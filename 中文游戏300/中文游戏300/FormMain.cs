@@ -1,6 +1,7 @@
 ﻿using CCWin;
 using System;
 using System.Data;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
@@ -9,57 +10,91 @@ namespace DVD中文游戏300
 {
     public partial class FormMain : CCSkinMain
     {
-        //游戏菜单显示计数器
-        int GameMenuIndex = 1;
-        //游戏页数计数器
-        int GameChapterIndex = 1;
-        //模拟器路径
-        string emu = null;
-        //游戏ROM路径
-        string game = null;
-        //游戏记录保存文件名
-        string strPath = @"E:\VCD300NesGames\GameRecord.xml";
-        //记录当前选中的游戏文件
-        string gameId = null;
+        int GameMenuIndex = 1;                        //游戏菜单显示计数器
+        int GameChapterIndex = 1;                    //游戏页数计数器
+        string AppConfig = null;                        //程序配置文件路径
+        string EmuRoute = null;                         //模拟器路径
+        string GameRoute = null;                      //游戏ROM路径         
+        string GameRecord = null;                   //游戏记录保存文件名
+        string gameId = null;                           //记录当前选中的游戏文件
 
-        public FormMain()
-        {
-            InitializeComponent();
-        }
+        #region Xml配置读写相关方法
 
-        private void Game_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 初始化配置加载
+        /// </summary>
+        public void AppConfigRead()
         {
-            
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            AppConfig();
-        }
-
-        //初始化配置加载
-        public void AppConfig()
-        {
-            skinTabControl1.SelectedTab = skinTabPage1;
+            skinTabControlMain.SelectedTab = skinTabPage1;  //默认选中第一个选项卡
 
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(@"E:\VCD300NesGames\AppConfig.xml");   //加载xml文件
-
-            XmlNode xns = xmlDoc.SelectSingleNode("appSettings");   //读取配置节点
-
-            emu = xns.ChildNodes[2].InnerText;
-            game = xns.ChildNodes[3].InnerText;
-
-            if (xns.ChildNodes[0].InnerText == "true")
+            if (File.Exists("AppConfig.xml"))
             {
-                Thread thread = new Thread(spVoice);
-                thread.Start();
+                xmlDoc.Load("AppConfig.xml");   //加载配置xml文件
+                XmlNode xNode = xmlDoc.SelectSingleNode("appSettings");   //读取配置节点
+                foreach (XmlNode node in xNode)
+                {
+                    if (node.SelectSingleNode("spVoiceSound").InnerText.Trim() == "true")
+                    {
+                        Thread thread = new Thread(spVoice);
+                        thread.Start();
+                    }
+                    AppConfig = node.SelectSingleNode("AppConfig").InnerText.Trim();
+                    EmuRoute = node.SelectSingleNode("EmuRoute").InnerText.Trim();
+                    GameRoute = node.SelectSingleNode("GameRoute").InnerText.Trim();
+                    GameRecord = node.SelectSingleNode("GameRecord").InnerText.Trim();
+                }
+                GetXmlInfo();
             }
-
-            GetXmlInfo();
+            else
+            {
+                MessageBox.Show("本次程序启动失败，错误原因：\n\n未在目录中找到程序配置文件：AppConfig.xml \n\n请重新安装此程序以解决问题。", "程序启动错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
         }
 
-        //播放欢迎音频
+        /// <summary>
+        /// 增加游戏次数、保存到xml、刷新DataGridView显示
+        /// </summary>
+        public void GameCountUp()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(GameRecord);   //加载xml文件
+
+            XmlNode xns = xmlDoc.SelectSingleNode("GameRecord");   //查找要修改的节点
+            foreach (XmlNode xn in xns)
+            {
+                XmlElement element = (XmlElement)xn;
+                if (element.GetAttribute("id") == gameId)
+                {
+                    int count = Convert.ToInt32(element.GetAttribute("count"));
+                    count++;   //次数加1
+                    element.SetAttribute("count", count.ToString());
+                    break;
+                }
+            }
+            xmlDoc.Save(GameRecord);
+            GetXmlInfo();   //刷新主控件显示
+        }
+
+        /// <summary>
+        /// 读取xml文件数据填充到DataGridView
+        /// </summary>
+        public void GetXmlInfo()
+        {
+            skinDataGridView1.AutoGenerateColumns = false;  //禁止自动创建列
+            DataSet myds = new DataSet();
+            myds.ReadXml(GameRecord);
+            skinDataGridView1.DataSource = myds.Tables[0];
+        }
+
+        #endregion
+
+        #region 语音播放方法
+
+        /// <summary>
+        /// 播放欢迎音频
+        /// </summary>
         public void spVoice()
         {
             Type type = Type.GetTypeFromProgID("SAPI.SpVoice");
@@ -67,7 +102,13 @@ namespace DVD中文游戏300
             spVoice.Speak("欢迎游玩 中文游戏300");
         }
 
-        //切换显示主页面游戏菜单图片
+        #endregion
+
+        #region 页面菜单图片切换方法
+
+        /// <summary>
+        /// 切换显示主页面游戏菜单图片
+        /// </summary>
         public void GamesMenuImg()
         {
             if (GameMenuIndex == 0)   //到一页时显示提示信息
@@ -234,73 +275,85 @@ namespace DVD中文游戏300
             }
         }
 
-        //增加游戏次数、保存到xml、刷新DataGridView显示
-        public void GameCountUp()
-        {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(strPath);   //加载xml文件
+        #endregion
 
-            XmlNode xns = xmlDoc.SelectSingleNode("GameRecord");   //查找要修改的节点
-            foreach (XmlNode xn in xns)
-            {
-                XmlElement element = (XmlElement)xn;
-                if (element.GetAttribute("id") == gameId)
-                {
-                    int count = Convert.ToInt32(element.GetAttribute("count"));
-                    count++;   //次数加1
-                    element.SetAttribute("count", count.ToString());
-                    break;
-                }
-            }
-            xmlDoc.Save(strPath);
-            GetXmlInfo();   //刷新主控件显示
+        #region 弹出提示框相关方法
+
+        /// <summary>
+        /// 弹出模拟器操作提示对话框
+        /// </summary>
+        public void MessageBoxShow()
+        {
+            MessageBox.Show("模拟器启动后点击顶部的 选项 按钮即可进行相应的设置", "操作提示", MessageBoxButtons.OK);
         }
 
-        //读取xml文件数据填充到DataGridView
-        public void GetXmlInfo()
+        #endregion
+
+        public FormMain()
         {
-            skinDataGridView1.AutoGenerateColumns = false;  //禁止自动创建列
-            DataSet myds = new DataSet();
-            myds.ReadXml(strPath);
-            skinDataGridView1.DataSource = myds.Tables[0];
+            InitializeComponent();
         }
 
-        /*==============================================================*/
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            AppConfigRead();
+        }
 
-        //上一页
+        /// <summary>
+        /// 上一页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SkinButtonLeft_Click(object sender, EventArgs e)
         {
             GameMenuIndex--;    //游戏菜单计数器减1
             GamesMenuImg();     //调用切换显示主页面游戏菜单图片方法
         }
 
-        //下一页
+        /// <summary>
+        /// 下一页
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SkinButtonRight_Click(object sender, EventArgs e)
         {
             GameMenuIndex++;    //游戏菜单计数器加1
             GamesMenuImg();     //调用切换显示主页面游戏菜单图片方法
         }
 
-        //确定选择
+        /// <summary>
+        /// 确定选择
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SkinButtonOK_Click(object sender, EventArgs e)
         {
             GameMenuIndex = (int)numericUpDownMenuIndex.Value;
             GamesMenuImg();     //调用切换显示主页面游戏菜单图片方法
         }
 
-        //运行游戏
+        /// <summary>
+        /// 运行游戏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SkinButtonReady_Click(object sender, EventArgs e)
         {
             string gameIndex = numericUpDownGameIndex.Value.ToString();
-            string Rungame = game + @"\" + GameChapterIndex + "-" + gameIndex+ ".nes";
+            string Rungame = GameRoute + @"\" + GameChapterIndex + "-" + gameIndex+ ".nes";
             gameId = GameChapterIndex + "-" + gameIndex;    //设置当前选择的游戏名
             GameCountUp();
-            System.Diagnostics.Process.Start(emu, Rungame);
+            System.Diagnostics.Process.Start(EmuRoute, Rungame);
         }
 
+        /// <summary>
+        /// 点击菜单退出程序方法
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("是否退出本程序？？", "确认退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            DialogResult dr = MessageBox.Show("是否退出本程序？？", "确认退出", MessageBoxButtons.OKCancel);
             if (dr == DialogResult.OK)
             {
                 this.FormClosing -= new FormClosingEventHandler(this.FormMain_FormClosing);
@@ -308,19 +361,37 @@ namespace DVD中文游戏300
             }
         }
 
-        private void 模拟器设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 点击主窗体退出程序按钮方法
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            string emu = @"E:\VCD300NesGames\Emulator\VirtuaNES.exe";
-            System.Diagnostics.Process.Start(emu);
-
-            Thread thread = new Thread(MessageBoxShow);
-            thread.Start();
+            DialogResult dr = MessageBox.Show("是否退出本程序？？", "确认退出", MessageBoxButtons.OKCancel);
+            if (dr == DialogResult.OK)
+            {
+                this.FormClosing -= new FormClosingEventHandler(this.FormMain_FormClosing);
+                Application.Exit();
+            }
+            else if (dr == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
         }
 
-        //弹出对话框
-        public void MessageBoxShow()
+        private void 模拟器设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("模拟器启动后点击顶部的 选项 按钮即可进行相应的设置", "操作提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            if (File.Exists(EmuRoute))
+            {
+                System.Diagnostics.Process.Start(EmuRoute);
+                Thread thread = new Thread(MessageBoxShow);
+                thread.Start();
+            }
+            else
+            {
+                MessageBox.Show("未找到模拟器文件!! 可能为以下原因:\n\n1.您修改了模拟器的路径或文件名\n2.模拟器文件可能不存在\n\n请重新安装程序以解决此问题。","模拟器启动失败",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
 
         private void 软件设置ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -356,19 +427,6 @@ namespace DVD中文游戏300
             FormAbout FormAbout = new FormAbout();
             FormAbout.Show();
         }
-
-        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("是否退出本程序？？", "确认退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-            if (dr == DialogResult.OK)
-            {
-                this.FormClosing -= new FormClosingEventHandler(this.FormMain_FormClosing);
-                Application.Exit();
-            }
-            else if (dr == DialogResult.Cancel)
-            {
-                e.Cancel = true;
-            }
-        }
+        
     }
 }

@@ -54,7 +54,7 @@
             this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.skinTabControl1 = new CCWin.SkinControl.SkinTabControl();
+            this.skinTabControlMain = new CCWin.SkinControl.SkinTabControl();
             this.skinTabPage1 = new CCWin.SkinControl.SkinTabPage();
             this.skinTabPage2 = new CCWin.SkinControl.SkinTabPage();
             this.skinFlowLayoutPanel1 = new CCWin.SkinControl.SkinFlowLayoutPanel();
@@ -110,7 +110,7 @@
             this.skinGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGameIndex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
-            this.skinTabControl1.SuspendLayout();
+            this.skinTabControlMain.SuspendLayout();
             this.skinTabPage1.SuspendLayout();
             this.skinTabPage2.SuspendLayout();
             this.skinFlowLayoutPanel1.SuspendLayout();
@@ -495,33 +495,33 @@
             this.Column2.ReadOnly = true;
             this.Column2.Width = 110;
             // 
-            // skinTabControl1
+            // skinTabControlMain
             // 
-            this.skinTabControl1.AnimatorType = CCWin.SkinControl.AnimationType.HorizSlide;
-            this.skinTabControl1.CloseRect = new System.Drawing.Rectangle(2, 2, 12, 12);
-            this.skinTabControl1.Controls.Add(this.skinTabPage1);
-            this.skinTabControl1.Controls.Add(this.skinTabPage2);
-            this.skinTabControl1.Controls.Add(this.skinTabPage3);
-            this.skinTabControl1.DrawType = CCWin.SkinControl.DrawStyle.Draw;
-            this.skinTabControl1.HeadBack = null;
-            this.skinTabControl1.ImgTxtOffset = new System.Drawing.Point(0, 0);
-            this.skinTabControl1.ItemSize = new System.Drawing.Size(70, 36);
-            this.skinTabControl1.Location = new System.Drawing.Point(7, 142);
-            this.skinTabControl1.Name = "skinTabControl1";
-            this.skinTabControl1.PageArrowDown = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageArrowDown")));
-            this.skinTabControl1.PageArrowHover = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageArrowHover")));
-            this.skinTabControl1.PageBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.skinTabControl1.PageBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.skinTabControl1.PageCloseHover = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageCloseHover")));
-            this.skinTabControl1.PageCloseNormal = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageCloseNormal")));
-            this.skinTabControl1.PageDown = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageDown")));
-            this.skinTabControl1.PageHover = ((System.Drawing.Image)(resources.GetObject("skinTabControl1.PageHover")));
-            this.skinTabControl1.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
-            this.skinTabControl1.PageNorml = null;
-            this.skinTabControl1.SelectedIndex = 0;
-            this.skinTabControl1.Size = new System.Drawing.Size(280, 559);
-            this.skinTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.skinTabControl1.TabIndex = 17;
+            this.skinTabControlMain.AnimatorType = CCWin.SkinControl.AnimationType.HorizSlide;
+            this.skinTabControlMain.CloseRect = new System.Drawing.Rectangle(2, 2, 12, 12);
+            this.skinTabControlMain.Controls.Add(this.skinTabPage1);
+            this.skinTabControlMain.Controls.Add(this.skinTabPage2);
+            this.skinTabControlMain.Controls.Add(this.skinTabPage3);
+            this.skinTabControlMain.DrawType = CCWin.SkinControl.DrawStyle.Draw;
+            this.skinTabControlMain.HeadBack = null;
+            this.skinTabControlMain.ImgTxtOffset = new System.Drawing.Point(0, 0);
+            this.skinTabControlMain.ItemSize = new System.Drawing.Size(70, 36);
+            this.skinTabControlMain.Location = new System.Drawing.Point(7, 142);
+            this.skinTabControlMain.Name = "skinTabControlMain";
+            this.skinTabControlMain.PageArrowDown = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageArrowDown")));
+            this.skinTabControlMain.PageArrowHover = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageArrowHover")));
+            this.skinTabControlMain.PageBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.skinTabControlMain.PageBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.skinTabControlMain.PageCloseHover = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageCloseHover")));
+            this.skinTabControlMain.PageCloseNormal = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageCloseNormal")));
+            this.skinTabControlMain.PageDown = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageDown")));
+            this.skinTabControlMain.PageHover = ((System.Drawing.Image)(resources.GetObject("skinTabControlMain.PageHover")));
+            this.skinTabControlMain.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
+            this.skinTabControlMain.PageNorml = null;
+            this.skinTabControlMain.SelectedIndex = 0;
+            this.skinTabControlMain.Size = new System.Drawing.Size(280, 559);
+            this.skinTabControlMain.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.skinTabControlMain.TabIndex = 17;
             // 
             // skinTabPage1
             // 
@@ -1097,7 +1097,7 @@
             this.ControlBoxDeactive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Controls.Add(this.skinGroupBox1);
             this.Controls.Add(this.skinGroupBoxGameMenu);
-            this.Controls.Add(this.skinTabControl1);
+            this.Controls.Add(this.skinTabControlMain);
             this.Controls.Add(this.skinGroupBoxSel);
             this.Controls.Add(this.skinToolStripMenu);
             this.Controls.Add(this.statusStrip1);
@@ -1120,7 +1120,7 @@
             this.skinGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGameIndex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).EndInit();
-            this.skinTabControl1.ResumeLayout(false);
+            this.skinTabControlMain.ResumeLayout(false);
             this.skinTabPage1.ResumeLayout(false);
             this.skinTabPage2.ResumeLayout(false);
             this.skinFlowLayoutPanel1.ResumeLayout(false);
@@ -1172,7 +1172,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel4;
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel5;
-        private CCWin.SkinControl.SkinTabControl skinTabControl1;
+        private CCWin.SkinControl.SkinTabControl skinTabControlMain;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownMenuIndex;
